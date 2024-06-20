@@ -1,0 +1,39 @@
+h1 {
+    color: blue;
+    size: 800px;
+    text-align: center;
+   }
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+#left-container {
+	background-color: #eee;
+	width: 15%;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+}
+#right-container {
+	background-color: #eee;
+	width: 15%;
+	right: 0px;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+}
+.plant-holder {
+	position: relative;
+	height: 13%;
+	left: -10px;
+}
+
+.plant {
+	position: absolute;
+	max-width: 130%;
+	max-height: 130%;
+	z-index: 2;
+}
