@@ -1,0 +1,91 @@
+/*layout for sections*/
+
+/* General */
+
+.layout-section {
+    padding-bottom: 150px;
+    scroll-margin-top: 20px;
+}
+
+.layout-section-title {
+    margin-bottom: 36px;
+}
+
+@media (max-width: 37.5rem) {
+    .layout-section {
+        padding-bottom: 100px;
+    }
+}
+
+/* Intro section: About me */
+
+#intro {
+    position: relative;   /* did this for the scroll down svg*/
+}
+
+#intro-h1 {
+    margin-bottom: 40px;
+}
+
+#intro p {
+    margin-block: 8px;
+}
+
+.layout-grid-half {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+}
+
+@media (max-width: 37.5rem) {
+	.layout-grid-half {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
+
+#scroll-down {
+    all: unset;
+    box-sizing: border-box;
+    outline: revert;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    bottom: 30px;
+    left: calc(50vw - 24px);
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+    margin-bottom: 40px;
+}
+
+.footer-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-side a {
+    color: transparent;
+}
+
+.footer-side p.text {
+    margin-bottom: 0px;
+}
+
+.footer-side p.text--sm {
+    margin-top: 0px;
+}
+
+@media (max-width: 37.5rem) {
+    .footer {
+        flex-direction: column;
+    }
+}

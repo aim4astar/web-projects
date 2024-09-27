@@ -1,0 +1,99 @@
+.btn {
+    all: unset;
+    outline: revert;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: translate 180ms, opacity 180ms;
+    opacity: 0.8;
+}
+
+.btn--nav {
+    color: var(--text-color);
+    padding: 12px;
+}
+
+.btn--raised {
+    background-color: var(--primary);
+    color: var(--beige);
+    padding: 12px 50px 12px 24px;
+    background-image: url("/MyPortfolio/assets/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    border-radius: 6px;
+}
+
+.btn--line {
+    color: var(--text-color);
+    padding: 12px;
+}
+
+.btn--line::after {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid 1px var(--primary);
+    height: 4px;
+    width: 100%;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.btn:active {
+    translate: 1px 1px;
+}
+
+#toggle-theme {
+    all: inherit;
+    outline: revert;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: fixed;
+    top: 5px;
+    right: 20px;
+    padding: 3px;
+    z-index: 1;
+    transition: translate 180ms;
+}
+
+#toggle-theme:active {
+    translate: 1px 1px;
+}
+
+#scroll-down {
+    all: unset;
+    outline: revert;
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    bottom: 25px;
+    left: calc(50vw - 48px / 2);
+    cursor: pointer;
+}
+
+#scroll-down svg {
+    fill: var(--dark-icon);
+    animation: Bounce 1.6s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+
+#scroll-down svg:hover {
+    fill: var(--light-icon);
+}
+
+@keyframes Bounce {
+    0% {
+        translate: 0 0;
+    }
+
+    50% {
+        translate: 0 -15px;
+    }
+}
+/* Don't forget to use the CSS Variables defined in index.css */

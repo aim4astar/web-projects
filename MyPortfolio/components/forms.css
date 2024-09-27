@@ -1,0 +1,27 @@
+/* Don't forget to use the color variables defined in index.css */
+.input {
+    all: unset;
+    outline: revert;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: transparent;
+    padding: 6px 6px 12px 2px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: solid 1px var(--gray); 
+    color: var(--text-color);
+    font-weight: 300;
+    line-height: 1.0;
+    font-size: 1.4rem;
+    transition: border-bottom 200ms;
+}
+
+textarea.input {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.input:focus {
+    outline: none;
+    border-bottom: solid 1px var(--primary);
+}

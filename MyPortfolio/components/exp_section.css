@@ -1,0 +1,27 @@
+.experience {
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.experience:last-child {
+    margin-bottom: 0px;
+}
+
+.exp-logo {
+    border-radius: 50%;
+    width: clamp(175px, 20vw, 300px);
+    height: clamp(175px, 20vw, 300px);
+}
+
+.experience:nth-child(odd) .logo-date {
+    order: 1;
+}
+
+@media (max-width: 37.5rem) {
+    .experience {
+        display: block;
+    }
+}

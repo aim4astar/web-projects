@@ -1,0 +1,16 @@
+.container {
+    max-width: 960px;
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+
+.container-wide {
+    max-width: 1080px;
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+
+.container-sm {
+    max-width: 720px;
+    margin-inline: auto;
+}

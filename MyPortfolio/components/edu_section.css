@@ -1,0 +1,50 @@
+/* .edu-card-layout {
+    display: flex;
+    flex-direction: column;
+} */
+
+.card {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 16px;
+    border: solid 1px white;
+    border-radius: 51px;
+    margin-block: 20px;
+    padding-right: 16px;
+    place-items: center;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.edu-text p {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.text-msu p {
+    color: white;
+}
+
+.text-pitt p {
+    color: gold;
+}
+
+.card-msu {
+    background-color: #9b1717;
+}
+
+.card-pitt {
+    background-color: #266ed4;
+}
+
+@media (max-width: 37.5rem) {
+    .card {
+        display: block;
+        padding-right: 0;
+        text-align: center;
+    }
+}
