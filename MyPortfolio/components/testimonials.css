@@ -1,0 +1,46 @@
+#carousel {
+    /* border: solid 1px white; */
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    transform-style: preserve-3d;
+}
+
+/* remove later */
+/* .test-border {    
+    border: solid 1px white;
+} */
+
+.carousel_text {
+    opacity: 0;
+    position: absolute;
+    top:0;
+    width: 100%;
+    margin: auto;
+    padding: 1rem 4rem;
+    z-index: 2;
+}
+
+.carousel_text.active {
+    opacity: 1;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    position: relative;
+    z-index: 4;
+    
+}
+
+.carousel_text.prev,
+.carousel_text.next {
+  z-index: 3;
+}
+
+#previous_btn,
+#next_btn {
+    z-index: 5;
+}
+
+@keyframes fade {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}

@@ -21,15 +21,16 @@
 
 /* Texts */
 .text--xl {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     font-weight: 300;
-    line-height: 1.77;   
+    line-height: 1.65;   
 }
 
 .text--lg {
     font-size: 1.4rem;
     font-weight: 300;
-    line-height: 1.9;   
+    line-height: 1.9;
+    margin-top: 0;   
 }
 
 .text--bold {

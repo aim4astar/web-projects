@@ -3,7 +3,7 @@
 /* General */
 
 .layout-section {
-    padding-bottom: 150px;
+    padding-bottom: 60px;
     scroll-margin-top: 20px;
 }
 
@@ -13,7 +13,7 @@
 
 @media (max-width: 37.5rem) {
     .layout-section {
-        padding-bottom: 100px;
+        padding-bottom: 60px;
     }
 }
 
@@ -25,6 +25,7 @@
 
 #intro-h1 {
     margin-bottom: 40px;
+    margin-top:40px;
 }
 
 #intro p {

@@ -17,4 +17,33 @@ document.querySelector("#scroll-down").addEventListener("click", () => {
 });
 
 
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("carousel_text")
 
+    if (n > slides.length) {slideIndex = slides.length}
+    if (n < 1) {slideIndex = 1}
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active")
+    }
+
+    slides[slideIndex - 1].classList.add("active");
+}
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+const previous = document.querySelector("#previous_btn");
+previous.addEventListener("click", () => {
+    plusSlides(-1);
+})
+
+const next = document.querySelector("#next_btn");
+next.addEventListener("click", () => {
+    plusSlides(1);
+})
