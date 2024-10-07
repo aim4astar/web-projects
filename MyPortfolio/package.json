@@ -4,12 +4,17 @@
   "description": "Portfolio website of Keshav Mishra",
   "main": "main.js",
   "scripts": {
-    "test": "npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node main.js"
   },
   "repository": {
     "type": "git",
-    "url": "web-projects"
+    "url": "git+https://github.com/aim4astar/web-projects.git"
   },
   "author": "Keshav Mishra",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/aim4astar/web-projects/issues"
+  },
+  "homepage": "https://github.com/aim4astar/web-projects#readme"
 }
