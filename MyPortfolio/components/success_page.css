@@ -1,0 +1,15 @@
+#successPage {
+    height: 100vh;
+    display: grid;
+    text-align: center;
+    place-content: center;
+}
+
+#successPage #grid-item {
+    height: min-content;
+}
+
+#successPage #grid-item img {
+    width: 12rem;
+    height: auto;
+}
