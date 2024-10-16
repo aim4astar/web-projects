@@ -22,6 +22,7 @@
 html {
     background-color: var(--dark-blue);
     color: var(--text-color);
+    font-size: 16px;
 }
 
 html.light-theme {
@@ -56,9 +57,5 @@ input, textarea, button, select {
 @media (max-width: 37.5rem) {
     :root {
         --gap: 30px;
-    }
-
-    html {
-        font-size: 50%;
     }
 }

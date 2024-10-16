@@ -88,6 +88,14 @@ button#scroll-down {
     fill: var(--light-icon);
 }
 
+#resize-btns {
+    opacity: 0.6;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 1;
+}
+
 @keyframes Bounce {
     0% {
         translate: 0 0;

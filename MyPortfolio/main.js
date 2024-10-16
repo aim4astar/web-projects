@@ -47,3 +47,17 @@ const next = document.querySelector("#next_btn");
 next.addEventListener("click", () => {
   plusSlides(1);
 })
+
+function makeSizer(size) {
+  return function() {
+    document.documentElement.style.fontSize = size + 'px';
+  };
+}
+
+let smallerSize = makeSizer(12);
+let ogSize = makeSizer(16);
+let biggerSize = makeSizer(20);
+
+document.getElementById("smallerSize").onclick = smallerSize;
+document.getElementById("ogSize").onclick = ogSize;
+document.getElementById("biggerSize").onclick = biggerSize;

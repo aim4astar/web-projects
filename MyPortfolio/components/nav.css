@@ -14,7 +14,7 @@
     padding-left: 0;
 }
 
-@media (max-width: 37.5rem) {
+@media (max-width: 48.5rem) {
     .nav-links li:not(:last-child) {
         display: none;
     }
