@@ -1,6 +1,7 @@
 import socket
 from _thread import *
-import sys
+import pickle
+
 
 server = "127.0.0.1"
 port = 5555
@@ -11,10 +12,12 @@ try:
     s.bind((server, port))
 
 except socket.error as e:
-    str(e)
+    print(str(e))
 
 s.listen(2)
 print("Waiting for a connection, Server Started")
+
+
 
 def read_pos(str):
     str = str.split(",")
@@ -23,11 +26,16 @@ def read_pos(str):
 def make_pos(tuple):
     return str(tuple[0]) + "," + str(tuple[1])
 
+
+
 pos = [(0, 0), (100, 100)]
+
+
 
 def threaded_client(conn, player):
 
     conn.send(str.encode(make_pos(pos[player])))
+
     reply = ""
     while True:
         try:
@@ -56,10 +64,11 @@ def threaded_client(conn, player):
 
 
 
-currentPlayer = 0
 
+currentPlayer = 0
 while True:
     conn, addr = s.accept()
     print("Connected to: ", addr)
 
     start_new_thread(threaded_client, (conn, currentPlayer))
+    currentPlayer += 1
